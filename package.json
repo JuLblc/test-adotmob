@@ -2,9 +2,9 @@
   "name": "test-adotmob",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.ts",
+  "main": "source/server.ts",
   "scripts": {
-    "dev": "nodemon src/app.ts",
+    "dev": "nodemon source/server.ts",
     "build": "rm -rf build/ && prettier --write source/ && tsc"
   },
   "keywords": [],
@@ -22,6 +22,7 @@
     "express": "^4.17.1",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
     "ts-node": "^10.4.0"
   }
 }
