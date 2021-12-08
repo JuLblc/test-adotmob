@@ -1,0 +1,27 @@
+{
+  "name": "test-adotmob",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.ts",
+  "scripts": {
+    "dev": "nodemon src/app.ts",
+    "build": "rm -rf build/ && prettier --write source/ && tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/express": "^4.17.13",
+    "@types/morgan": "^1.9.3",
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0"
+  }
+}
