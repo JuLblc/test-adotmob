@@ -1,10 +1,17 @@
 import { Request, Response, NextFunction } from "express";
 import axios, { AxiosResponse } from "axios";
 
-const routeTest = async (req: Request, res: Response, next: NextFunction) => {
-  res.status(200).json({
-    message: "Welcome",
-  });
-};
+import { EventToMatched , PointOfInterest } from '../types'
+import utils from '../utils'
 
-export default { routeTest };
+const matchPointOfInterest = async (req: Request, res: Response, next: NextFunction) => {
+
+  const body:PointOfInterest[] = req.body; 
+  const events: EventToMatched[] = await utils.getEvents(); 
+
+  console.log('body: ', body);
+  console.log('events: ', events);
+
+}
+
+export default { matchPointOfInterest };
