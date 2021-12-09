@@ -7,5 +7,16 @@ export type EventToMatched = {
 export type PointOfInterest = {
     lat: number,
     lon: number,
-    name: string
+    name: string,
+    impressions:number,
+    clicks:number
 }
+
+export type DistanceInfo = {
+    distance: number,
+    name: string,
+}
+
+export interface LooseObject {
+    [key: string]: PointOfInterest
+  }
